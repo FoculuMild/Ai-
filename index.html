@@ -96,7 +96,7 @@ async function sendMessage(){
     sendBtn.disabled = true;
 
     try{
-        const stream = await puter.ai.chat(prompt,{model:"gpt-5-mini",stream:true});
+        const stream = await puter.ai.chat(prompt,{model:'anthropic/claude-3-5-sonnet',stream:true});
         let fullText='';
         removeTypingIndicator(botMsgDiv);
 
